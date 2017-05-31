@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+.banner {
+  height: 250px;
+}
+
+.menu {
+  height: 75px;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  float: left;
+  margin: 5px;
+
+}
+
+.menu select {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.col-left {
+  float: left;
+  width: 65%;
+  padding: 0 2%;
+}
+
+.col-right {
+  padding-right: 2%;
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+  img {
+    max-width: 100%;
+  }
+
+  .menu {
+    height: 30px;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .menu select {
+    display: block;
+    text-transform: capitalize;
+    width: 90vw;
+    margin: 5px auto;
+  }
+
+  .col-left {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
